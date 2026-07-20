@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+/* Left Section */
+.container-right {
+    flex: 1.5;
+    width: 350px;
+    text-align: center;
+    margin: 30px;
+}
+
+.insta-logoimage {
+    width: 180px;
+    margin-bottom: 20px;
+    align-items: left;
+}
+
+.container-right p {
+    font-size: 18px;
+    color: #262626;
+    margin-bottom: 20px;
+}
+
+.instaimage {
+    width: 100%;
+    border-radius: 0%;
+    
+}
+
+/* Right Section */
+.containerleft {
+    flex: 1;
+    width: 350px;
+    margin: 30px;
+}
+
+.login {
+    background: white;
+    border: 1px solid #dbdbdb;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.login-box,
+.pasword-box {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    outline: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background: #1877f2;
+}
+
+.login a {
+    text-decoration: none;
+    color: #00376b;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Facebook Login Box */
+.facebook-login {
+    background: white;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.facebook-btn {
+    background: #1877f2;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.facebook-btn:hover {
+    background: #166fe5;
+}
+
+.create-btn {
+    background: #42b72a;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.create-btn:hover {
+    background: #36a420;
+}
+
+.meta {
+    text-align: center;
+    margin-top: 20px;
+    color: #737373;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #8e8e8e;
+    margin: 0 8px;
+    font-size: 13px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .container-right,
+    .containerleft {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .instaimage {
+        width: 80%;
+    }
+}
